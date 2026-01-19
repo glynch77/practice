@@ -100,6 +100,31 @@ button:focus {
         display: block !important;
     }
 }
+
+#onlineCoaching{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  #onlineCoaching:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  }
+
+  #individualTraining{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  #individualTraining:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  }
+
+  #nutritionCoaching {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  #nutritionCoaching:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+  }
+    
   
   /* Footer */
   .footer {
