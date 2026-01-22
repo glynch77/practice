@@ -1,3 +1,11 @@
+#logo{
+  max-height: 100%; /* Scales height to fit parent */
+  width: auto;     /* Keeps aspect ratio */
+  height: 50px;    /* Or a fixed height like 50px */
+  display: block;  /* Helps with alignment */
+}
+
+
 .section {
     padding: 100px 0;
   }
@@ -101,12 +109,14 @@ button:focus {
     }
 }
 
+    /* Services Section Hover Effects */
+
 #onlineCoaching{
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   #onlineCoaching:hover {
     transform: scale(1.05);
-    background-color: #f0f0f0;
+    background-color:yellow;
   }
 
   #individualTraining{
@@ -114,7 +124,7 @@ button:focus {
   }
   #individualTraining:hover {
     transform: scale(1.05);
-    background-color: #f0f0f0;
+    background-color:yellow;
   }
 
   #nutritionCoaching {
@@ -122,7 +132,7 @@ button:focus {
   }
   #nutritionCoaching:hover {
     transform: scale(1.05);
-    background-color: #f0f0f0;
+    background-color:yellow;
   }
     
   
