@@ -13,9 +13,18 @@ window.addEventListener("load", () => {
   });
 });
 
-// Testimonial Carousel
+// Start Training Button
+const startTrainingBtn = document.getElementById("startTrainingBtn");
+const contactSection = document.getElementById("contact");
+
+startTrainingBtn.addEventListener("click", () => {
+  contactSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+// About Section
 const moreText = document.getElementById("moreText");
-console.log("🚀 ~  moreText:", moreText);
 const readMoreBtn = document.getElementById("readMoreBtn");
 
 function readMore() {
@@ -29,6 +38,8 @@ function readMore() {
 }
 
 readMoreBtn.addEventListener("click", readMore);
+
+// Testimonials Carousel
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
@@ -164,3 +175,13 @@ function nutritionCard(nutrition) {
 }
 
 nutritionCard(nutrition);
+
+// GET
+const copyrightElement = document.getElementById('copyright');
+
+// RESPOND
+const year = new Date().getFullYear();
+const companyName = "Fitlife Training";
+
+// UPDATE - Build the entire string
+copyrightElement.innerHTML = `&copy; ${year} ${companyName}. All rights reserved.`;

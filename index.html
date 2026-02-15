@@ -66,9 +66,9 @@
         <p class="lead">Personal training tailored to your goals</p>
 
         <!-- JS PRACTICE: button scrolls to contact -->
-        <a href="#contact" class="btn btn-primary mt-3" id="startTrainingBtn">
-            Start Training
-          </a>
+        <button class="btn btn-primary mt-3" id="startTrainingBtn">Start Training
+            
+          </button>
           
       </div>
     </section>
@@ -203,9 +203,11 @@
         <h2 class="text-center mb-4">Get Started</h2>
 
         <!-- JS PRACTICE: form validation -->
-        <form id="contactForm" class="mx-auto" style="max-width: 500px">
-          <div class="mb-3">
+        <form name="contactForm" id="contactForm" class="mx-auto" style="max-width: 500px">
+          <div  class="mb-3">
             <input
+
+              id="nameInput"
               type="text"
               class="form-control"
               placeholder="Name"
@@ -215,6 +217,7 @@
 
           <div class="mb-3">
             <input
+              id="emailInput"
               type="email"
               class="form-control"
               placeholder="Email"
@@ -223,7 +226,7 @@
           </div>
 
           <div class="mb-3">
-            <textarea class="form-control" placeholder="Your goals"></textarea>
+            <textarea name="message" class="form-control" placeholder="Your goals"></textarea>
           </div>
 
           <button class="btn btn-primary w-100">Submit</button>
@@ -232,12 +235,9 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer id="footerDate" class="footer">
       <div class="container text-center">
-        <p class="mb-1">© 2026 FitLife Training</p>
-
-        <!-- JS PRACTICE: dynamic year -->
-        <small id="year"></small>
+        <p id="copyright"></p>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
